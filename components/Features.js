@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 export default function Features() {
   return (
     <div>
@@ -140,12 +140,16 @@ export default function Features() {
               </div>
             </div>
 
-            <div className="hidden lg:flex lg:w-1/2 lg:justify-center">
-              <img
-                className="w-[28rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full"
-                src="https://images.unsplash.com/photo-1585206031650-9e9a7c87dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VjdXJpdHklMjBjYW1lcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
+            <div className="hidden lg:flex lg:w-1/2 lg:justify-center ">
+              <div className="w-[28rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full relative">
+                <Image
+                  className="rounded-full"
+                  src="https://images.unsplash.com/photo-1585206031650-9e9a7c87dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VjdXJpdHklMjBjYW1lcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  layout="fill"
+                  objectFit="cover"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>

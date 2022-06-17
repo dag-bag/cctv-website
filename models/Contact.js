@@ -2,34 +2,24 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 const orderSchema = new Schema(
   {
-    userId: {
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "book",
+    },
+    name: {
       type: String,
       required: true,
     },
-    products: [
-      {
-        productId: {
-          type: String,
-        },
-        quantity: {
-          type: Number,
-          default: 1,
-        },
-      },
-    ],
 
-    address: {
+    email: {
       type: String,
       required: true,
+      unique: true,
     },
-    total: {
-      type: Number,
+    msg: {
+      type: String,
       required: true,
-    },
-    status: {
-      type: Number,
-      default: "pending",
-      required: true,
+      unique: true,
     },
   },
   { timestamps: true }

@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function contact() {
+export default function contact({ bookings }) {
+  // const [ep, setEp] = useState({
+  //   name: "",
+  //   email: "",
+  //   phone: "",
+  // });
+  // const onChange = (e) => {
+  //   setEp({ ...ep, [e.target.name]: e.target.value });
+  // };
+  // const handleClick = async (e) => {
+  //   console.log(ep);
+  //   e.preventDefault();
+
+  //   bookings(ep, "/book");
+  //   // auth(ep, "signup");
+  // };
   return (
     <div>
       <section className="text-gray-600 body-font relative">

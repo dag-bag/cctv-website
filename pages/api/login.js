@@ -1,4 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+w// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import connectDb from "../../middleware/mongoose";
 import User from "../../models/User";
 var bcrypt = require("bcryptjs");

@@ -41,10 +41,14 @@ export const TopNavbar = () => {
           <div className="flex justify-center items-center text-2xl space-x-3">
             <BsFacebook className="text-blue-500 cursor-pointer" />
             <Link href={"https://api.whatsapp.com/send?phone=8766203976"}>
-              <RiWhatsappFill className="text-green-500 cursor-pointer text-3xl" />
+              <a>
+                <RiWhatsappFill className="text-green-500 cursor-pointer text-3xl" />
+              </a>
             </Link>
             <Link href={"https://t.me/+91 8766203976"} target="_blank">
-              <FaTelegram className="text-blue-400 cursor-pointer" />
+              <a>
+                <FaTelegram className="text-blue-400 cursor-pointer" />
+              </a>
             </Link>
           </div>
         </div>

@@ -12,6 +12,7 @@ export const Header = ({ bookings }) => {
   const handleClick = async (e) => {
     console.log(ep);
     e.preventDefault();
+
     bookings(ep, "/book");
     // auth(ep, "signup");
   };

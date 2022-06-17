@@ -2,7 +2,6 @@ import { Footer } from "../components/Footer";
 import { Nav } from "../components/Navbar";
 import { TopNavbar } from "../components/TopNavbar";
 import "../styles/globals.css";
-import "../styles/style.scss";
 
 function MyApp({ Component, pageProps }) {
   const bookings = async (ep, path) => {
