@@ -6,24 +6,18 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { FaTelegram } from "react-icons/fa";
 export const TopNavbar = () => {
   return (
-    <div className=" px-8 py-3 shadow-md">
-      <div className="max-w-7xl m-auto flex justify-between items-center">
+    <div className=" px-8 py-3 shadow-md flex-wrap">
+      <div className="max-w-7xl m-auto flex sm:justify-between items-center flex-wrap justify-center space-y-2 sm:space-y-0">
         {/* First */}
         <div className="flex justify-center items-center space-x-3">
           <Link href={"tel:+919910122789"}>
-            <button
-              type="submit"
-              className="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-purple-700 shadow-md hover:text-purple-700 hover:bg-white focus:outline-none focus:ring-2 flex justify-center items-center space-x-2"
-            >
+            <button className="w-full px-4 py-2   md:text-base md:font-semibold text-center text-white transition duration-200 ease-in bg-purple-700 shadow-md text-xs hover:text-purple-700 hover:bg-white focus:outline-none focus:ring-2 flex justify-center items-center space-x-2 ">
               <MdCall className="text-lg" />
-              <span className="w-full"> Call us: +91 8766203076</span>
+              <span className="w-full "> Call us: +91 8766203076</span>
             </button>
           </Link>
           <Link href={"mailto:virenderkumar23435@gmail.com"}>
-            <button
-              type="submit"
-              className="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-purple-700 shadow-md hover:text-purple-700 hover:bg-white focus:outline-none focus:ring-2 flex justify-center items-center space-x-2"
-            >
+            <button className="w-full px-4 py-4 md:py-2 md:text-base md:font-semibold text-xs text-center text-white transition duration-200 ease-in bg-purple-700 shadow-md hover:text-purple-700 hover:bg-white focus:outline-none focus:ring-2 flex justify-center items-center space-x-2">
               <MdMail className="text-lg" />
               <span className="w-full"> virenderkumar@gmail.com</span>
             </button>
