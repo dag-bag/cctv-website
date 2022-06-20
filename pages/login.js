@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 // import { ToastContainer } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 export default function Login({ auth }) {
@@ -17,6 +18,11 @@ export default function Login({ auth }) {
   };
   return (
     <>
+      <Head>
+        <title>Login now - Ks Security Services</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Best security services in Delhi." />
+      </Head>
       <div className="relative flex flex-col-reverse  md:py-16 lg:pt-0 lg:flex-col lg:pb-0">
         <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0 hidden md:block">
           <svg

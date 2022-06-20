@@ -1,6 +1,6 @@
 import React from "react";
-import { RiFingerprint2Fill } from "react-icons/ri";
 import ServicePageCard from "../components/ServicePageCard";
+import Head from "next/head";
 export default function services() {
   const boxesData = [
     {
@@ -31,6 +31,11 @@ export default function services() {
 
   return (
     <div className="h-[80vh] w-full max-w-6xl m-auto p-5">
+      <Head>
+        <title>OUR SERVICES - Ks Security Services</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Best security services in Delhi." />
+      </Head>
       <div className="text space-y-3">
         <h2 className="text-[#42394A] text-4xl font-semibold">
           We have web <br /> accesbility in mind.

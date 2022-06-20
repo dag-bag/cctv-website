@@ -1,8 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 export default function signup() {
   return (
     <div>
+      <Head>
+        <title>Sign up now - Ks Security Services</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Best security services in Delhi." />
+      </Head>
       <section>
         <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
           <div className="justify-center mx-auto text-left align-bottom transition-all transform bg-white rounded-lg sm:align-middle sm:max-w-2xl sm:w-full">

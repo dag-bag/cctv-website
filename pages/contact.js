@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
-export default function contact({ bookings }) {
+import Head from "next/head"
+export default function contact() {
   // const [ep, setEp] = useState({
   //   name: "",
   //   email: "",
@@ -18,6 +18,11 @@ export default function contact({ bookings }) {
   // };
   return (
     <div>
+      <Head>
+        <title>Contact - us- Ks Security Services</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Best security services in Delhi." />
+      </Head>
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
           <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
