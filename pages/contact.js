@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Head from "next/head"
+import Head from "next/head";
 export default function contact() {
   // const [ep, setEp] = useState({
   //   name: "",
@@ -36,6 +36,7 @@ export default function contact() {
               marginWidth="0"
               scrolling="no"
               src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+              sandbox="allow-scripts"
             ></iframe>
             <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
               <div className="lg:w-1/2 px-6">
